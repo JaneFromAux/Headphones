@@ -23,8 +23,8 @@ body {
             width: 100%;
 
             img {
-                margin: 12vh 0 5vw 20vh;
-                height: 100vh;
+                margin: 0vh 0 0vw 20vh;
+                height: 50px;
                 width: 50px;
 
             }
@@ -32,7 +32,7 @@ body {
             ul {
                 @include flexit(space-evenly, center);
                 list-style: none;
-                width: 30%;
+                width: 34%;
 
                 li {
                     a {
@@ -50,7 +50,7 @@ body {
                 div {
                     @include flexit(space-between, center);
                     padding-right: 20px;
-                    padding-left: 10px;
+                    padding-left: 20px;
 
                     li {
                         a {
