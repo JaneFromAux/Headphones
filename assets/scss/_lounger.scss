@@ -1,0 +1,93 @@
+// @import "_generals.scss";
+// @import "_mixin.scss";
+
+// // Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115) 
+
+
+// body {
+//     background: #2e2e2e;
+
+//     header {
+//         nav {
+//             @include flexit(space-between, center);
+//             height: 80px;
+//             font-size: 1.3rem;
+//             position: fixed;
+//             right: 6%;
+//             width: 100%;
+
+//             img {
+//                 width: 80px;
+//             }
+
+//             ul {
+//                 @include flexit(space-evenly, center);
+//                 list-style: none;
+//                 width: 40%;
+
+//                 li {
+//                     a {
+//                         text-decoration: none;
+//                         color: #867772;
+//                         margin-right: 50px;
+//                     }
+
+//                     a:hover {
+//                         text-decoration: underline;
+//                         color: #ebccc2;
+//                     }
+//                 }
+
+//                 div {
+//                     @include flexit(space-between, center);
+//                     padding-right: 20px;
+//                     padding-left: 10px;
+
+//                     li {
+//                         a {
+//                             text-decoration: none;
+//                             color: #867772;
+//                             margin-right: 30px;
+//                         }
+
+//                         a:hover {
+//                             text-decoration: underline;
+//                             color: #ebccc2;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     main {
+//         padding: 0;
+
+
+
+//         .lounger {
+//             padding: 0;
+//             height: 100vh;
+
+//             div {
+//                 width: 100%;
+//                 background: url('../img/section-voyager.jpg') no-repeat;
+
+//                 top: 0;
+//                 right: 0;
+//                 background-size: cover;
+//             }
+
+//             section {
+//                 padding: 16vh 5vw 0 0vw;
+//                 width: 50%;
+
+//                 h2 {
+//                     padding-bottom: 5vh;
+//                 }
+
+//                 p {}
+//             }
+//         }
+//     }
+// }

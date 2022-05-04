@@ -1,0 +1,367 @@
+@import "_generals.scss";
+@import "_mixin.scss";
+@import "_lounger.scss";
+@import "_experience.scss";
+@import "_inspiration.scss";
+@import "_shop.scss";
+
+
+// Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115) 
+
+
+body {
+    background: #2e2e2e;
+    // overflow: hidden;
+
+    header {
+        nav {
+            @include flexit(space-between, center);
+            height: 80px;
+            font-size: 1.3rem;
+            position: fixed;
+            right: 6%;
+            width: 100%;
+
+            img {
+                margin: 12vh 0 5vw 20vh;
+                height: 100vh;
+                width: 50px;
+
+            }
+
+            ul {
+                @include flexit(space-evenly, center);
+                list-style: none;
+                width: 30%;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #867772;
+                        margin-right: 20px;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                        color: #ebccc2;
+                    }
+                }
+
+                div {
+                    @include flexit(space-between, center);
+                    padding-right: 20px;
+                    padding-left: 10px;
+
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: #867772;
+                            margin-right: 15px;
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                            color: #ebccc2;
+                        }
+                    }
+                }
+            }
+        }
+
+        h1 {
+
+            color: #ebccc2;
+            font-size: 4.3rem;
+            font-weight: 300;
+            line-height: 5rem;
+            width: 58%;
+            padding: 16vh 0 16vh 22%;
+        }
+
+        img {
+            width: 90%;
+            margin: 0 5% 16vh 5%;
+        }
+    }
+}
+
+aside {
+    position: fixed;
+    left: 0;
+    top: 22vh;
+    width: 200px;
+    margin-left: 1vw;
+
+    ul {
+        position: absolute;
+        list-style: none;
+        font-size: 4rem;
+        color: #867772;
+
+        li {
+            padding: 0vh 0 0vh 2.3vw;
+            margin: 3vh;
+
+            // background: lime;
+
+            a {
+                display: block;
+                font-size: 1.5rem;
+                text-decoration: none;
+                color: #867772;
+            }
+
+            a:nth-of-type(1) {
+                padding: 0;
+                margin-top: 0;
+            }
+
+            a:before {
+                content: "⌾";
+                font-size: 4rem;
+                position: fixed;
+                left: 28px;
+                line-height: 2rem;
+            }
+
+            a:hover {
+                color: #ebccc2;
+            }
+        }
+
+        .strich {
+            height: 4vh;
+            border-left: 1px solid #867772;
+        }
+    }
+}
+
+
+main {
+    .mainIndex {
+        @include flexit(space-evenly, center);
+        padding: 3% 8% 16% 8%;
+
+        img {
+            width: 480px;
+            height: 480px;
+        }
+
+        section {
+
+            padding: 0 0 0 10%;
+
+            h2 {
+                padding: 0 0 3vh 0;
+                color: #ebccc2;
+                font-size: 3.5rem;
+                font-weight: 300;
+                line-height: 5rem;
+            }
+
+            p {
+                color: #867772;
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+                padding-bottom: 2.5vh;
+            }
+        }
+    }
+}
+
+
+.lounger {
+    @include flexit(space-between, center);
+
+    div {
+        background: url("../img/section-voyager.jpg") right/ cover no-repeat;
+        height: 100vh;
+        width: 55%;
+
+    }
+
+    section {
+        width: 40%;
+        padding-top: 22vh;
+        padding-right: 5vw;
+
+        h2 {
+            padding: 0 0 10vh 0;
+            color: #ebccc2;
+            font-size: 3.5rem;
+            font-weight: 300;
+            line-height: 5rem;
+        }
+
+        p {
+            color: #867772;
+            font-size: 1.7rem;
+            line-height: 2.8rem;
+            padding-bottom: 2.5vh;
+        }
+    }
+}
+
+.experience {
+    @include flexit(space-between, center);
+
+    div {
+        background: url("../img/section-experience-1.jpg") right/ cover no-repeat;
+        height: 100vh;
+        width: 55%;
+
+    }
+
+    section {
+        width: 40%;
+        padding-top: 22vh;
+        padding-right: 5vw;
+
+        h2 {
+            padding: 0 0 10vh 0;
+            color: #ebccc2;
+            font-size: 3.5rem;
+            font-weight: 300;
+            line-height: 5rem;
+        }
+
+        p {
+            color: #867772;
+            font-size: 1.7rem;
+            line-height: 2.8rem;
+            padding-bottom: 2.5vh;
+        }
+    }
+
+}
+
+.inspiration {
+    padding: 25vh 20% 0 20%;
+
+    iframe {
+        height: 480px;
+        width: 850px;
+        border: none;
+    }
+
+    article {
+        padding-top: 16vh;
+        padding-bottom: 10vh;
+
+        h3 {
+            padding: 0 0 0vh 0;
+            color: #ebccc2;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 5rem;
+        }
+
+        h2 {
+            padding: 0 0 4vh 0;
+            color: #ebccc2;
+            font-size: 3.5rem;
+            font-weight: 300;
+            line-height: 5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #867772;
+            padding: 5px 7px 5px 7px;
+            margin-right: 3px;
+            letter-spacing: 2px;
+            border: 1px solid #ebccc2;
+            border-radius: 2px;
+        }
+
+        p {
+            color: #867772;
+            font-size: 1.7rem;
+            line-height: 2.8rem;
+            padding-top: 4vh;
+            padding-bottom: 2.5vh;
+        }
+    }
+
+    section {
+        @include flexit(space-between, center);
+        height: 60vh;
+
+        img {
+            width: 50%;
+            height: 100%;
+        }
+
+        article {
+            padding-left: 1vw;
+            width: 50%;
+        }
+    }
+
+    section {
+        article {
+            // padding-right: 2vw;
+            width: 50%;
+
+            h2 {
+                padding-right: 4vw;
+            }
+        }
+
+        img {
+            width: 50%;
+            height: 100%;
+        }
+    }
+
+}
+
+.shop {
+    @include flexit(space-between, center);
+
+    div {
+        background: url("../img/section-composition4.jpg") top/ cover no-repeat;
+        height: 100vh;
+        width: 55%;
+
+    }
+
+    section {
+        width: 40%;
+        // padding-top: 22vh;
+        padding-right: 5vw;
+
+        text-align: center;
+
+        img {
+            height: 60vh;
+            width: 100%;
+        }
+
+        h2 {
+            padding: 0 0 1vh 0;
+            color: #ebccc2;
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 5rem;
+        }
+
+        p {
+            color: #867772;
+            font-size: 1.7rem;
+            line-height: 2.8rem;
+            padding-bottom: 1.4vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2e2e2e;
+            font-size: 1.2rem;
+            background-color: #ebccc2;
+            padding: 8px 20px;
+            letter-spacing: 2px;
+            border-radius: 2px;
+        }
+    }
+
+}
