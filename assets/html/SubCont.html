@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="../img/logo.svg" alt="logo">
+            <ul>
+                <li><a href="#">Subscribe & Contact</a></li>
+                <div>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </div>
+                <li><a href="#">DE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside>
+        <ul>
+            <li><a href="../../index.html">ABOUT</a></li>
+            <li class="strich">
+            </li>
+            <li><a href="../html/lounger.html">LOUNGER</a></li>
+            <li class="strich">
+            </li>
+            <li><a href="../html/experience.html">EXPERIENCE</a></li>
+            <li class="strich">
+            </li>
+            <li><a href="../html/inspiration.html">INSPIRATION</a></li>
+            <li class="strich">
+            </li>
+            <li><a href="../html/shop.html">SHOP</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section class="subCont">
+            <div>
+                <section class="form">
+                    <h2>Stay in contact</h2>
+                    <h3>Subscribe to our newsletter</h3>
+                    <form action="" onsubmit="return false">
+                        <label for="name">NAME</label>
+                        <input type="name" name="name" id="name" placeholder="your name" required>
+                        <label for="LastName">LASTNAME</label>
+                        <input type="name" name="lastName" id="lastName" placeholder="your lastname" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="your email" required>
+                        <input type="submit" value="submit" onclick="subscribed()">
+                    </form>
+                </section>
+            </div>
+            <img class="logo" src="../img/logo.svg" alt="headphones">
+        </section>
+        <div id="toggleContainer" class="toggleContainer">
+            <h2>THANK YOU FOR SUBSCRIBING</h2>
+            <h3>Our newsletter is full of surprises and the best listenings.
+                You will hear the best from us.
+            </h3>
+            <input type="submit" value="close" onclick="closeContainer()">
+        </div>
+    </main>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

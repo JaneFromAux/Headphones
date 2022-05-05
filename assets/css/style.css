@@ -284,9 +284,49 @@ body header img {
 aside {
   position: fixed;
   left: 0;
-  top: 22vh;
+  top: 25vh;
   width: 200px;
   margin-left: 1vw;
+}
+aside .divIndex:before {
+  content: "⃝";
+  font-size: 1.8rem;
+  color: #ebccc2;
+  position: absolute;
+  top: -5px;
+  left: 33px;
+}
+aside .divLounger:before {
+  content: "⃝";
+  left: 33px;
+  top: 85px;
+  font-size: 1.8rem;
+  color: #ebccc2;
+  position: absolute;
+}
+aside .divExperience:before {
+  content: "⃝";
+  left: 33px;
+  top: 175px;
+  font-size: 1.8rem;
+  color: #ebccc2;
+  position: absolute;
+}
+aside .divInspiration:before {
+  content: "⃝";
+  left: 33px;
+  top: 265px;
+  font-size: 1.8rem;
+  color: #ebccc2;
+  position: absolute;
+}
+aside .divShop:before {
+  content: "⃝";
+  left: 33px;
+  top: 360px;
+  font-size: 1.8rem;
+  color: #ebccc2;
+  position: absolute;
 }
 aside ul {
   position: absolute;
@@ -296,7 +336,7 @@ aside ul {
 }
 aside ul li {
   padding: 0vh 0 0vh 2.3vw;
-  margin: 3vh;
+  margin-left: 3vh;
 }
 aside ul li a {
   display: block;
@@ -304,23 +344,88 @@ aside ul li a {
   text-decoration: none;
   color: #867772;
 }
-aside ul li a:nth-of-type(1) {
-  padding: 0;
-  margin-top: 0;
-}
-aside ul li a:before {
-  content: "⌾";
-  font-size: 4rem;
-  position: fixed;
-  left: 28px;
-  line-height: 2rem;
-}
 aside ul li a:hover {
   color: #ebccc2;
 }
+aside ul li .aboutIndex {
+  color: #ebccc2;
+}
+aside ul li .aboutLounger {
+  color: #ebccc2;
+}
+aside ul li .aboutExperience {
+  color: #ebccc2;
+}
+aside ul li .aboutInspiration {
+  color: #ebccc2;
+}
+aside ul li .aboutShop {
+  color: #ebccc2;
+}
 aside ul .strich {
-  height: 4vh;
+  height: 8vh;
   border-left: 1px solid #867772;
+}
+aside ul:before {
+  content: "⃝";
+  color: #867772;
+  font-size: 1rem;
+  position: fixed;
+  left: 44px;
+  top: 195px;
+  line-height: 2rem;
+}
+
+ul:nth-of-type(2) {
+  top: 90px;
+}
+
+ul:nth-of-type(2):before {
+  content: "⃝";
+  font-size: 1rem;
+  position: fixed;
+  left: 44px;
+  top: 285px;
+  line-height: 2rem;
+}
+
+ul:nth-of-type(3) {
+  top: 180px;
+}
+
+ul:nth-of-type(3):before {
+  content: "⃝";
+  font-size: 1rem;
+  position: fixed;
+  left: 44px;
+  top: 375px;
+  line-height: 2rem;
+}
+
+ul:nth-of-type(4) {
+  top: 270px;
+}
+
+ul:nth-of-type(4):before {
+  content: "⃝";
+  font-size: 1rem;
+  position: fixed;
+  left: 44px;
+  top: 465px;
+  line-height: 2rem;
+}
+
+ul:nth-of-type(5) {
+  top: 360px;
+}
+
+ul:nth-of-type(5):before {
+  content: "⃝";
+  font-size: 1rem;
+  position: fixed;
+  left: 44px;
+  top: 560px;
+  line-height: 2rem;
 }
 
 main .mainIndex {
@@ -521,6 +626,132 @@ main .mainIndex section p {
   padding: 8px 20px;
   letter-spacing: 2px;
   border-radius: 2px;
+}
+
+.subCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.subCont div {
+  background: url("../img/section-composition4.jpg") top/cover no-repeat;
+  height: 100vh;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.subCont div .form {
+  background-color: rgba(235, 204, 194, 0.6);
+  padding: 3vh;
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #ebccc2;
+}
+.subCont div .form h2 {
+  text-align: center;
+  font-size: 5rem;
+  color: #2e2e2e;
+  font-weight: bold;
+}
+.subCont div .form h3 {
+  padding: 3vh 0;
+  text-align: center;
+  font-size: 2rem;
+  color: #2e2e2e;
+}
+.subCont div form {
+  margin: 0 0 0 0;
+  padding: 0 0vh 3vh 0vw;
+  color: #2e2e2e;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 100%;
+}
+.subCont div form label {
+  display: block;
+  text-align: left;
+  padding: 2vh;
+}
+.subCont div form input {
+  width: 100%;
+  text-align: center;
+  line-height: 3rem;
+}
+.subCont div form input:nth-of-type(4) {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 3vh;
+  width: 120px;
+  padding: 10px 30px;
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  border: 1px solid #2e2e2e;
+  color: #ebccc2;
+  margin-left: 29%;
+}
+.subCont div form input:nth-of-type(4):hover {
+  text-decoration: underline;
+  background-color: #ebccc2;
+  border: 1px solid #ebccc2;
+  color: #2e2e2e;
+  box-shadow: 0 0 20px #2e2e2e;
+}
+.subCont .logo {
+  opacity: 0.6;
+  margin: 20px;
+  width: 600px;
+  background-color: rgba(134, 119, 114, 0.5);
+  border-radius: 43%;
+  box-shadow: 0 0 80px #867772;
+}
+
+.toggleContainer {
+  margin: 5% 2%;
+  background-color: rgb(235, 204, 194);
+  padding: 3vh;
+  width: 96%;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #ebccc2;
+  height: 90vh;
+  position: absolute;
+  top: -105vh;
+  scroll-behavior: smooth;
+}
+.toggleContainer h2 {
+  text-align: center;
+  font-size: 6rem;
+  color: #867772;
+  font-weight: bold;
+  padding: 17vh;
+}
+.toggleContainer h3 {
+  padding: 3vh 0;
+  text-align: center;
+  font-size: 4rem;
+  color: #867772;
+  padding: 5vh;
+}
+.toggleContainer input {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 3vh;
+  width: 120px;
+  padding: 10px 30px;
+  background-color: #867772;
+  border-radius: 5px;
+  border: 1px solid #867772;
+  color: #ebccc2;
+  margin-left: 45%;
+}
+.toggleContainer input:hover {
+  text-decoration: underline;
+  background-color: #ebccc2;
+  border: 1px solid #ebccc2;
+  color: #867772;
+  box-shadow: 0 0 20px #2e2e2e;
 }
 
 /*# sourceMappingURL=style.css.map */

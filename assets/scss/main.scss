@@ -4,6 +4,7 @@
 @import "_experience.scss";
 @import "_inspiration.scss";
 @import "_shop.scss";
+@import "_SubCont.scss";
 
 
 // Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115) 
@@ -11,7 +12,6 @@
 
 body {
     background: #2e2e2e;
-    // overflow: hidden;
 
     header {
         nav {
@@ -26,7 +26,6 @@ body {
                 margin: 0vh 0 0vw 20vh;
                 height: 50px;
                 width: 50px;
-
             }
 
             ul {
@@ -69,7 +68,6 @@ body {
         }
 
         h1 {
-
             color: #ebccc2;
             font-size: 4.3rem;
             font-weight: 300;
@@ -88,9 +86,57 @@ body {
 aside {
     position: fixed;
     left: 0;
-    top: 22vh;
+    top: 25vh;
     width: 200px;
     margin-left: 1vw;
+
+    .divIndex:before {
+        content: "⃝";
+        // left: 44px;
+        // top: 195px;
+        font-size: 1.8rem;
+        color: #ebccc2;
+        position: absolute;
+        top: -5px;
+        left: 33px
+    }
+
+    .divLounger:before {
+        content: "⃝";
+        left: 33px;
+        top: 85px;
+        font-size: 1.8rem;
+        color: #ebccc2;
+        position: absolute;
+    }
+
+    .divExperience:before {
+        content: "⃝";
+        left: 33px;
+        top: 175px;
+        font-size: 1.8rem;
+        color: #ebccc2;
+        position: absolute;
+    }
+
+    .divInspiration:before {
+        content: "⃝";
+        left: 33px;
+        top: 265px;
+        font-size: 1.8rem;
+        color: #ebccc2;
+        position: absolute;
+    }
+
+    .divShop:before {
+        content: "⃝";
+        left: 33px;
+        top: 360px;
+        font-size: 1.8rem;
+        color: #ebccc2;
+        position: absolute;
+    }
+
 
     ul {
         position: absolute;
@@ -100,9 +146,9 @@ aside {
 
         li {
             padding: 0vh 0 0vh 2.3vw;
-            margin: 3vh;
+            margin-left: 3vh;
 
-            // background: lime;
+
 
             a {
                 display: block;
@@ -111,29 +157,99 @@ aside {
                 color: #867772;
             }
 
-            a:nth-of-type(1) {
-                padding: 0;
-                margin-top: 0;
-            }
-
-            a:before {
-                content: "⌾";
-                font-size: 4rem;
-                position: fixed;
-                left: 28px;
-                line-height: 2rem;
-            }
-
             a:hover {
+                color: #ebccc2;
+            }
+
+            .aboutIndex {
+                color: #ebccc2;
+            }
+
+            .aboutLounger {
+                color: #ebccc2;
+            }
+
+            .aboutExperience {
+                color: #ebccc2;
+            }
+
+            .aboutInspiration {
+                color: #ebccc2;
+            }
+
+            .aboutShop {
                 color: #ebccc2;
             }
         }
 
         .strich {
-            height: 4vh;
+            height: 8vh;
             border-left: 1px solid #867772;
         }
     }
+
+    ul:before {
+        content: "⃝";
+        color: #867772;
+        font-size: 1rem;
+        position: fixed;
+        left: 44px;
+        top: 195px;
+        line-height: 2rem;
+    }
+}
+
+ul:nth-of-type(2) {
+    top: 90px;
+
+}
+
+ul:nth-of-type(2):before {
+    content: "⃝";
+    font-size: 1rem;
+    position: fixed;
+    left: 44px;
+    top: 285px;
+    line-height: 2rem;
+}
+
+ul:nth-of-type(3) {
+    top: 180px;
+}
+
+ul:nth-of-type(3):before {
+    content: "⃝";
+    font-size: 1rem;
+    position: fixed;
+    left: 44px;
+    top: 375px;
+    line-height: 2rem;
+}
+
+ul:nth-of-type(4) {
+    top: 270px;
+}
+
+ul:nth-of-type(4):before {
+    content: "⃝";
+    font-size: 1rem;
+    position: fixed;
+    left: 44px;
+    top: 465px;
+    line-height: 2rem;
+}
+
+ul:nth-of-type(5) {
+    top: 360px;
+}
+
+ul:nth-of-type(5):before {
+    content: "⃝";
+    font-size: 1rem;
+    position: fixed;
+    left: 44px;
+    top: 560px;
+    line-height: 2rem;
 }
 
 
@@ -148,7 +264,6 @@ main {
         }
 
         section {
-
             padding: 0 0 0 4vw;
             width: 50%;
 
@@ -178,7 +293,6 @@ main {
         background: url("../img/section-voyager.jpg") right/ cover no-repeat;
         height: 100vh;
         width: 55%;
-
     }
 
     section {
@@ -210,7 +324,6 @@ main {
         background: url("../img/section-experience-1.jpg") right/ cover no-repeat;
         height: 100vh;
         width: 55%;
-
     }
 
     section {
@@ -324,14 +437,11 @@ main {
         background: url("../img/section-composition4.jpg") top/ cover no-repeat;
         height: 100vh;
         width: 55%;
-
     }
 
     section {
         width: 40%;
-        // padding-top: 22vh;
         padding-right: 5vw;
-
         text-align: center;
 
         img {
@@ -364,5 +474,152 @@ main {
             border-radius: 2px;
         }
     }
+}
 
+.subCont {
+    @include flexit(space-between, center);
+
+    div {
+        background: url("../img/section-composition4.jpg") top/ cover no-repeat;
+        height: 100vh;
+        width: 55%;
+        @include flexit(center, center);
+
+        .form {
+            background-color: rgba(235, 204, 194, 0.6);
+            padding: 3vh;
+            width: 45%;
+            border-radius: 10px;
+            box-shadow: 0 0 30px #ebccc2;
+
+            h2 {
+                text-align: center;
+                font-size: 5rem;
+                color: #2e2e2e;
+                font-weight: bold;
+            }
+
+            h3 {
+                padding: 3vh 0;
+                text-align: center;
+                font-size: 2rem;
+                color: #2e2e2e;
+            }
+        }
+
+        form {
+            margin: 0 0 0 0;
+            padding: 0 0vh 3vh 0vw;
+            color: #2e2e2e;
+            font-size: 2rem;
+            font-weight: 500;
+            width: 100%;
+
+            label {
+                display: block;
+                text-align: left;
+                padding: 2vh;
+            }
+
+            input {
+                width: 100%;
+                text-align: center;
+                line-height: 3rem;
+            }
+
+            input:nth-of-type(4) {
+                text-align: center;
+                font-size: 1.6rem;
+                margin-top: 3vh;
+                width: 120px;
+                padding: 10px 30px;
+                background-color: #2e2e2e;
+                border-radius: 5px;
+                border: 1px solid #2e2e2e;
+                color: #ebccc2;
+                margin-left: 29%;
+            }
+
+            input:nth-of-type(4):hover {
+                text-decoration: underline;
+                background-color: #ebccc2;
+                border: 1px solid #ebccc2;
+                color: #2e2e2e;
+                box-shadow: 0 0 20px #2e2e2e;
+            }
+        }
+    }
+
+    // logo on Subscribe Contact site
+
+    .logo {
+        opacity: 0.6;
+        margin: 20px;
+        width: 600px;
+        background-color: rgb(134, 119, 114, 0.5);
+        border-radius: 43%;
+        box-shadow: 0 0 80px #867772;
+    }
+}
+
+//toggle class for JS
+
+// .subscribed {
+//     .form {
+//         background-color: rgba(235, 204, 194, 0.8);
+//         padding: 3vh;
+//         width: 45%;
+//         border-radius: 10px;
+//         box-shadow: 0 0 30px #ebccc2;
+//     }
+// }
+
+.toggleContainer {
+    margin: 5% 2%;
+    background-color: rgba(235, 204, 194);
+    padding: 3vh;
+    width: 96%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #ebccc2;
+    height: 90vh;
+    position: absolute;
+    top: -105vh;
+    scroll-behavior: smooth;
+
+    h2 {
+        text-align: center;
+        font-size: 6rem;
+        color: #867772;
+        font-weight: bold;
+        padding: 17vh;
+    }
+
+    h3 {
+        padding: 3vh 0;
+        text-align: center;
+        font-size: 4rem;
+        color: #867772;
+        padding: 5vh;
+    }
+
+    input {
+        text-align: center;
+        font-size: 1.6rem;
+        margin-top: 3vh;
+        width: 120px;
+        padding: 10px 30px;
+        background-color: #867772;
+        border-radius: 5px;
+        border: 1px solid #867772;
+        color: #ebccc2;
+        margin-left: 45%;
+    }
+
+    input:hover {
+        text-decoration: underline;
+        background-color: #ebccc2;
+        border: 1px solid #ebccc2;
+        color: #867772;
+        box-shadow: 0 0 20px #2e2e2e;
+    }
 }
