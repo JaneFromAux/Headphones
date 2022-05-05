@@ -646,7 +646,7 @@ main .mainIndex section p {
 .subCont div .form {
   background-color: rgba(235, 204, 194, 0.6);
   padding: 3vh;
-  width: 45%;
+  width: 55%;
   border-radius: 10px;
   box-shadow: 0 0 30px #ebccc2;
 }
@@ -681,6 +681,11 @@ main .mainIndex section p {
   line-height: 3rem;
 }
 .subCont div form input:nth-of-type(4) {
+  width: 100%;
+  text-align: center;
+  height: 10vh;
+}
+.subCont div form input:nth-of-type(5) {
   text-align: center;
   font-size: 1.6rem;
   margin-top: 3vh;
@@ -692,7 +697,7 @@ main .mainIndex section p {
   color: #ebccc2;
   margin-left: 29%;
 }
-.subCont div form input:nth-of-type(4):hover {
+.subCont div form input:nth-of-type(5):hover {
   text-decoration: underline;
   background-color: #ebccc2;
   border: 1px solid #ebccc2;
