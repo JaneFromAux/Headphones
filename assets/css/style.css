@@ -679,6 +679,9 @@ main .mainIndex section p {
   width: 100%;
   text-align: center;
   line-height: 3rem;
+  background: rgba(245, 245, 220, 0.6);
+  border: 2px solid #867772;
+  border-radius: 5px;
 }
 .subCont div form input:nth-of-type(4) {
   width: 100%;
@@ -695,12 +698,12 @@ main .mainIndex section p {
   border-radius: 5px;
   border: 1px solid #2e2e2e;
   color: #ebccc2;
-  margin-left: 29%;
+  margin-left: 36%;
 }
 .subCont div form input:nth-of-type(5):hover {
   text-decoration: underline;
-  background-color: #ebccc2;
-  border: 1px solid #ebccc2;
+  background-color: rgba(235, 204, 194, 0.4);
+  border: 1px solid rgba(235, 204, 194, 0.4);
   color: #2e2e2e;
   box-shadow: 0 0 20px #2e2e2e;
 }
